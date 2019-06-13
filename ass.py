@@ -158,10 +158,6 @@ if len(argvs) == 1:
     file_name = file_name[:file_name.find('.asm')]
 else:
     file_name = argvs[1][:argvs[1].find('.asm')]
-    with open(argvs[1][:argvs[1].find('.asm')]+".lst","w") as lst:
-        pass
-    with open(argvs[1][:argvs[1].find('.asm')]+".obj","w") as obj:
-        pass
 with open(file_name+".lst","w") as lst:
         for line in lines:
             for i in range(5):
